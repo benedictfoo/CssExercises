@@ -7,8 +7,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+
+
 img {
   width: 600px;
+  /* Added */
+  max-width: 100%;
 }
 
 button {
@@ -23,4 +27,46 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* Added */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(122, 121, 121);
+}
+
+body,
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+  padding: 1rem;
+}
+
+.content {
+  align-items: center;
+}
+
+.right-links,
+.left-links {
+  display: flex;
+  gap: 1rem;
 }
